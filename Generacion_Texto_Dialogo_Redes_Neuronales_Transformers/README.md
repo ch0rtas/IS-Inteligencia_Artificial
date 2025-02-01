@@ -63,9 +63,9 @@ El proyecto tiene como objetivo entrenar y evaluar diferentes modelos de redes n
 ## Resultados principales
 
 ### Modelos Generados
-- **LSTM-Abascal:** Mejor modelo para generar texto coherente con un accuracy aceptable.  
-- **LSTM-Casado:** Modelo con texto generado ligeramente menos coherente, pero con tiempos de entrenamiento más rápidos.  
-- **LSTM-Sanchez:** Modelo más eficiente en términos de generación, pero con menor creatividad en el texto generado.
+- **Abascal10:** Mejor modelo para generar texto coherente con un accuracy aceptable.  
+- **Casado12:** Modelo con texto generado ligeramente menos coherente, pero con tiempos de entrenamiento más rápidos.  
+- **Sanchez09:** Modelo más eficiente en términos de generación, pero con menor creatividad en el texto generado.
 
 ### Métricas de Evaluación
 - **Perplejidad:** Los modelos LSTM mostraron la perplejidad más baja, indicando textos más coherentes.
@@ -73,7 +73,7 @@ El proyecto tiene como objetivo entrenar y evaluar diferentes modelos de redes n
 
 ## Documentación adicional
 
-Para un análisis detallado de los resultados, las configuraciones de los modelos y las conclusiones, consulta el archivo **Memoria_Proyecto.pdf** incluido en este repositorio.  
+Para un análisis detallado de los resultados, las configuraciones de los modelos y las conclusiones, consulta el archivo **INAR #02 - Manuel Martínez.pdf** incluido en este repositorio.  
 
 ## Licencia
 
