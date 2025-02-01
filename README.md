@@ -25,7 +25,7 @@ Explora las carpetas para acceder a los diferentes proyectos y sigue las instruc
 El propósito de este repositorio es documentar y compartir el desarrollo de aplicaciones prácticas de inteligencia artificial, explorando tanto la teoría como la implementación de modelos y algoritmos en escenarios reales.
 
 ## Licencia
-Este repositorio está licenciado bajo la **MIT License**. Puedes usar, modificar y distribuir el contenido siempre que incluyas la atribución al autor original.
+Este repositorio está licenciado bajo la [MIT License](LICENSE). Puedes usar, modificar y distribuir el contenido siempre que incluyas la atribución al autor original.
 
 ---
 ¡Explora, aprende y disfruta del contenido de este repositorio!
