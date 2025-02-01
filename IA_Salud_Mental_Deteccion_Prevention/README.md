@@ -4,7 +4,15 @@ Este repositorio contiene el proyecto **IA en Salud Mental: Detección y Prevenc
 
 [Ir al proyecto en GitHub](https://github.com/ch0rtas/IS-Inteligencia_Artificial/tree/main/IA_Salud_Mental_Deteccion_Prevention)
 
-## Estructura del proyecto
+## Descripción del Proyecto
+
+La salud mental es un componente esencial del bienestar humano, sin embargo, millones de personas en todo el mundo enfrentan trastornos mentales como ansiedad, depresión y estrés, los cuales representan una carga significativa para los individuos y las sociedades. Según la Organización Mundial de la Salud (OMS), una de cada ocho personas vive con algún tipo de trastorno mental, y esta cifra ha aumentado considerablemente tras la pandemia de COVID-19. A pesar de su alta prevalencia, el acceso a diagnóstico y tratamiento oportunos sigue siendo limitado debido a barreras como la falta de recursos, estigmas sociales y la insuficiencia de profesionales capacitados. 
+
+En este contexto, la inteligencia artificial (IA) emerge como una herramienta prometedora para abordar estas limitaciones. La IA permite analizar grandes volúmenes de datos provenientes de texto, voz, patrones de uso de dispositivos móviles, e incluso redes sociales, para identificar signos tempranos de trastornos mentales. Además, su capacidad para personalizar análisis y recomendaciones la convierte en una aliada potencial para la prevención y la intervención temprana. 
+
+Este proyecto busca explorar el papel de la IA en la salud mental, destacando sus aplicaciones actuales, limitaciones y oportunidades futuras. Como complemento, se entrenará un modelo propio para evaluar la viabilidad de utilizar IA en el análisis de síntomas comunes, proporcionando un enfoque práctico a este análisis teórico.
+
+## Estructura del Proyecto
 
 Este repositorio se organiza en los siguientes archivos y carpetas:
 
@@ -22,16 +30,21 @@ Este repositorio se organiza en los siguientes archivos y carpetas:
   - `Javier Gómez_evaluacion.xlsx`: Evaluación de los resultados de los modelos con el caso de Javier Gómez.
   - `Laura Martínez_evaluacion.pdf`: Evaluación de los resultados de los modelos con el caso de Laura Martínez.
 
-## Descripción del proyecto
+## Evaluación
 
-El proyecto tiene como objetivo aplicar técnicas de inteligencia artificial para la detección temprana y prevención de trastornos mentales, como depresión, ansiedad y estrés, mediante el análisis de datos clínicos. El enfoque principal es el uso de modelos de clasificación supervisada para predecir el riesgo de desarrollo de estas condiciones en base a diferentes parámetros clínicos.
+Para evaluar el rendimiento del modelo, se utilizaron varias métricas de rendimiento: precisión, recall, F1-score y accuracy. Estas métricas son fundamentales para comprender no solo qué tan preciso es el modelo, sino también cómo maneja las diferentes clases de emociones. La precisión mide qué porcentaje de las predicciones del modelo son correctas, el recall mide qué porcentaje de las emociones verdaderas fueron detectadas, y el F1-score es la media armónica entre la precisión y el recall.
 
-### Características principales
+Los resultados de la evaluación en el conjunto de prueba mostraron una precisión del 92.95%, lo que indica que el modelo tiene un alto rendimiento en la clasificación de emociones. Además, se observó un rendimiento equilibrado en las métricas de precisión y recall, lo que sugiere que el modelo es capaz de identificar correctamente las emociones sin mostrar un sesgo hacia ninguna clase en particular. Este rendimiento es comparable con otros modelos de vanguardia en el campo de PLN para clasificación de emociones, como BERT y RoBERTa. 
 
-- **Preprocesamiento de datos clínicos:** Transformación de datos no estructurados en formatos útiles para el análisis.
-- **Modelos de clasificación:** Implementación y evaluación de modelos como Random Forest, SVM, y redes neuronales para la detección de trastornos.
-- **Evaluación del rendimiento:** Medición del desempeño del modelo utilizando métricas como precisión, recall, F1-score y AUC.
-- **Prevención personalizada:** Propuestas de intervención personalizadas basadas en los resultados del modelo.
+El modelo desarrollado ha demostrado ser altamente efectivo en la clasificación de emociones, alcanzando una precisión de 92.95% en el conjunto de prueba. Esto sugiere que la IA podría ser útil en la detección de emociones en textos relacionados con salud mental, ayudando a identificar trastornos emocionales como la depresión o la ansiedad. Sin embargo, se reconoce que este modelo aún tiene limitaciones, y que es necesario seguir mejorando tanto el modelo como la metodología para implementarlo en entornos clínicos reales.
+
+## Conclusión
+
+### Resumen de los aprendizajes del trabajo teórico y práctico
+
+Este proyecto ha proporcionado una comprensión profunda de cómo la Inteligencia Artificial (IA) puede ser aplicada al campo de la salud mental, enfocándose en el análisis de emociones y la predicción de trastornos emocionales. A través de la creación de un modelo de clasificación de emociones basado en el dataset "emotion", hemos aprendido los principios fundamentales del procesamiento de lenguaje natural (PLN), tokenización, y cómo trabajar con modelos preentrenados, en este caso, DistilBERT.
+
+En el ámbito práctico, se ha logrado entrenar un modelo de IA con una precisión de evaluación del 92.95%, lo que demuestra la efectividad del uso de modelos basados en transformers en tareas de clasificación de emociones en texto. Además, el proyecto ha incluido el desarrollo de una interfaz interactiva que permite a los usuarios interactuar directamente con el modelo, recopilando datos de pacientes en tiempo real y generando informes en PDF y Excel. Este enfoque práctico ha consolidado nuestra comprensión sobre la integración de la IA en aplicaciones del mundo real, permitiendo su uso potencial para apoyar el diagnóstico y la evaluación de trastornos emocionales.
 
 ## Cómo usar este repositorio
 
@@ -49,20 +62,6 @@ El proyecto tiene como objetivo aplicar técnicas de inteligencia artificial par
 
 4. **Analiza y personaliza:**  
    - Experimenta con las configuraciones de los modelos y el preprocesamiento de datos para mejorar los resultados.
-
-## Resultados principales
-
-### Modelos Generados
-- **Modelo de clasificación:** Un modelo de clasificación basado en Random Forest mostró una precisión del 85% en la detección de trastornos de ansiedad.
-- **Modelo de prevención:** El modelo de intervención temprana basado en redes neuronales ayudó a predecir con éxito los factores de riesgo para el desarrollo de depresión.
-
-### Métricas de Evaluación
-- **Precisión:** Los modelos de clasificación lograron una precisión entre el 80% y el 90% dependiendo del trastorno.
-- **F1-score:** El modelo de redes neuronales logró un F1-score alto, indicando un buen equilibrio entre precisión y recall.
-
-## Documentación adicional
-
-Para un análisis detallado de los resultados, las configuraciones de los modelos y las conclusiones, consulta el archivo **IA en salud mental - Manuel Martínez Ramón.pdf** incluido en este repositorio.
 
 ## Licencia
 
