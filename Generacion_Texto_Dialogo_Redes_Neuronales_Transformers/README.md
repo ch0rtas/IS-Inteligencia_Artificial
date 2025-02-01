@@ -8,14 +8,14 @@ Este repositorio contiene el proyecto **Generación de Texto y Diálogo con Mode
 
 Este repositorio se organiza en las siguientes carpetas y archivos:
 
-### **Benchmark/**
+### **benchmark/**
 Contiene los archivos de evaluación de los modelos entrenados para cada parlamentario.
 
 - `benchmarkAbascal/`: Evaluación del modelo entrenado para el parlamentario Abascal.
 - `benchmarkCasado/`: Evaluación del modelo entrenado para el parlamentario Casado.
 - `benchmarkSanchez/`: Evaluación del modelo entrenado para el parlamentario Sánchez.
 
-### **Parlamentarios/**
+### **parlamentarios/**
 Contiene los archivos de datos correspondientes a los discursos de cada parlamentario.
 
 - `abascal/`: Carpeta con los archivos de discursos de Abascal (abascal01 hasta abascal10).
@@ -50,12 +50,12 @@ El proyecto tiene como objetivo entrenar y evaluar diferentes modelos de redes n
    ```
 
 2. **Ejecuta los notebooks:**  
-   - Abre `Generacion_Texto.ipynb` para entrenar y evaluar los modelos de generación de texto.  
+   - Abre `*NAME+VERSION*.ipynb` para entrenar y evaluar los modelos de generación de texto.  
    - Abre `benchmarkAbascal.ipynb`, `benchmarkCasado.ipynb` o `benchmarkSanchez.ipynb` para evaluar el desempeño de cada modelo.  
    - Abre `dialogoCongreso.ipynb` para ver el diálogo simulado entre los parlamentarios.
 
 3. **Carga los modelos entrenados:**  
-   - Los modelos entrenados se encuentran en la carpeta `models/`. Carga el modelo correspondiente en cada notebook para realizar las evaluaciones o el diálogo.
+   - Los modelos entrenados se encuentran en la carpeta `parlamentarios/`. Carga el modelo correspondiente en cada notebook para realizar las evaluaciones o el diálogo.
 
 4. **Analiza y modifica:**  
    - Experimenta con las configuraciones para mejorar la calidad del texto generado o personalizar el diálogo.
