@@ -1,55 +1,61 @@
-# Clasificación de Imágenes: Perros y Gatos
+# Generación de Texto y Diálogo con Modelos de Redes Neuronales y Transformers
 
-Este repositorio contiene el proyecto **Clasificación de Imágenes: Perros y Gatos**, desarrollado como parte del curso _"Inteligencia Artificial"_ en el grado de Ingeniería de Software. El objetivo principal fue entrenar y evaluar modelos de redes neuronales convolucionales (CNN) y Transfer Learning para la clasificación de imágenes de perros y gatos.
+Este repositorio contiene el proyecto **Generación de Texto y Diálogo con Modelos de Redes Neuronales y Transformers**, desarrollado como parte del curso _"Inteligencia Artificial"_ en el grado de Ingeniería de Software. El objetivo principal fue entrenar y evaluar diferentes modelos de redes neuronales, incluidos RNN, LSTM, GRU, y Transformers, para la generación de texto y simulación de diálogos entre parlamentarios.
 
-[Ir al proyecto en GitHub](https://github.com/ch0rtas/IS-Inteligencia_Artificial/tree/main/Clasificación_Imagenes_Perros_y_Gatos)
+[Ir al proyecto en GitHub](https://github.com/ch0rtas/IS-Inteligencia_Artificial/tree/main/Generacion_Texto_Dialogo_Redes_Neuronales_Transformers)
 
 ## Descripción del proyecto
 
-Este proyecto implementa y compara varios modelos de clasificación de imágenes, utilizando tanto redes neuronales convolucionales (CNN) personalizadas como arquitecturas avanzadas de Transfer Learning. Todo el desarrollo se llevó a cabo en Google Colab con soporte de GPU para acelerar los tiempos de entrenamiento.
+Este proyecto implementa y evalúa varios modelos para la generación de texto, con énfasis en el uso de redes neuronales recurrentes (RNN), LSTM, GRU y Transformers. El objetivo es generar texto coherente a partir de un conjunto de datos de discursos de parlamentarios y simular un diálogo entre tres de ellos.
 
 ### Características principales
-- **CNNs Personalizadas:** Experimentación con configuraciones de capas, tamaños de batch y épocas.  
-- **Transfer Learning:** Adaptación de modelos preentrenados como ResNet50 y EfficientNet.  
-- **Optimización y análisis:** Evaluación de la eficiencia y precisión de diferentes configuraciones.  
-- **Gestión de recursos:** Ajustes para trabajar con las GPUs L4 y A100 en Google Colab.  
+- **Modelos RNN, LSTM, y GRU:** Comparación de rendimiento entre diferentes arquitecturas de redes neuronales.
+- **Transformers:** Exploración de la aplicación de Transformers para la generación de texto (aunque con limitaciones).
+- **Evaluación de calidad:** Uso de métricas como perplejidad, BLEU y ROUGE para evaluar la calidad del texto generado.
+- **Generación de Diálogo:** Implementación de un sistema de diálogo entre tres parlamentarios, con 5 rondas de interacción.
+- **Optimización de modelos:** Ajustes en la arquitectura y los parámetros de los modelos para mejorar la coherencia y relevancia del texto generado.
 
 ## Estructura del proyecto
 
 Este repositorio contiene los siguientes archivos clave:  
-- `cnn_models.ipynb`: Notebook con la implementación de las CNN personalizadas.  
-- `transfer_learning.ipynb`: Notebook con la implementación de Transfer Learning.  
+- `Generacion_Texto.ipynb`: Notebook principal con la implementación de la generación de texto usando RNN, LSTM, GRU y Transformers.  
+- `benchmarkAbascal.ipynb`: Notebook con la evaluación del modelo entrenado para el parlamentario Abascal.  
+- `benchmarkCasado.ipynb`: Notebook con la evaluación del modelo entrenado para el parlamentario Casado.  
+- `benchmarkSanchez.ipynb`: Notebook con la evaluación del modelo entrenado para el parlamentario Sánchez.  
+- `dialogoCongreso.ipynb`: Notebook donde los modelos generados interactúan en un diálogo simulado entre los tres parlamentarios.  
 - `Memoria_Proyecto.pdf`: Documentación completa del proyecto, incluyendo gráficos y análisis.  
-- `kaggle.json`: Credenciales necesarias para acceder a datasets desde Kaggle.  
+- `models/`: Carpeta que contiene los modelos entrenados guardados en formato `.h5` o `.keras`.
+
 
 ## Cómo usar este repositorio
 
 1. **Clona este repositorio:**  
    ```bash
    git clone https://github.com/ch0rtas/IS-Inteligencia_Artificial.git
-   cd Clasificación_Imagenes_Perros_y_Gatos
+   cd Generacion_Texto_Dialogo_Redes_Neuronales_Transformers
    ```
 
-2. **Configura Kaggle API:**  
-   - Descarga tu archivo `kaggle.json` desde [Kaggle](https://www.kaggle.com/).  
-   - Sube el archivo a tu entorno de Google Colab.  
+2. **Ejecuta los notebooks:**  
+   - Abre `Generacion_Texto.ipynb` para entrenar y evaluar los modelos de generación de texto.  
+   - Abre `benchmarkAbascal.ipynb`, `benchmarkCasado.ipynb` o `benchmarkSanchez.ipynb` para evaluar el desempeño de cada modelo.  
+   - Abre `dialogoCongreso.ipynb` para ver el diálogo simulado entre los parlamentarios.
 
-3. **Ejecuta los notebooks:**  
-   - Abre `cnn_models.ipynb` o `transfer_learning.ipynb` en Google Colab.  
-   - Asegúrate de tener una GPU habilitada en el entorno de Colab para ejecutar el código eficientemente.  
+3. **Carga los modelos entrenados:**  
+   - Los modelos entrenados se encuentran en la carpeta `models/`. Carga el modelo correspondiente en cada notebook para realizar las evaluaciones o el diálogo.
 
 4. **Analiza y modifica:**  
-   - Experimenta con las configuraciones para observar el impacto en los resultados.  
+   - Experimenta con las configuraciones para mejorar la calidad del texto generado o personalizar el diálogo.
 
 ## Resultados principales
 
-### Modelos CNN
-- **cnn03:** Mejor modelo CNN con un accuracy de **0.7678**, entrenado con batch size reducido, kernel más grande y 100 épocas.  
-- **cnn02:** Modelo menos eficiente con tiempo de entrenamiento excesivo y accuracy de **0.7154**.  
+### Modelos Generados
+- **LSTM-Abascal:** Mejor modelo para generar texto coherente con un accuracy aceptable.  
+- **LSTM-Casado:** Modelo con texto generado ligeramente menos coherente, pero con tiempos de entrenamiento más rápidos.  
+- **LSTM-Sanchez:** Modelo más eficiente en términos de generación, pero con menor creatividad en el texto generado.
 
-### Transfer Learning
-- **transferlearning03:** Mejor modelo basado en EfficientNetB5, con un accuracy significativamente mejor que otros modelos preentrenados.  
-- **transferlearning02:** Intento fallido con EfficientNetB7 debido a limitaciones de memoria, incluso con GPU A100.  
+### Métricas de Evaluación
+- **Perplejidad:** Los modelos LSTM mostraron la perplejidad más baja, indicando textos más coherentes.
+- **BLEU y ROUGE:** Los modelos generados por LSTM fueron los más cercanos a las referencias en términos de precisión de n-gramas.
 
 ## Documentación adicional
 
