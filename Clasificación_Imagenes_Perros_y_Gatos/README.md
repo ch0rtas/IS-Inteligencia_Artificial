@@ -2,7 +2,7 @@
 
 Este repositorio contiene el proyecto **Clasificación de Imágenes: Perros y Gatos**, desarrollado como parte del curso _"Inteligencia Artificial"_ en el grado de Ingeniería de Software. El objetivo principal fue entrenar y evaluar modelos de redes neuronales convolucionales (CNN) y Transfer Learning para la clasificación de imágenes de perros y gatos.
 
-[Ir al proyecto en GitHub](https://github.com/ch0rtas/IS-Inteligencia_Artificial/tree/main/Clasificación_Imagenes_Perros_y_Gatos)
+[Ir al proyecto en GitHub](https://github.com/ch0rtas/SWE-Inteligencia_Artificial/tree/main/Clasificación_Imagenes_Perros_y_Gatos)
 
 ## Descripción del proyecto
 
@@ -26,7 +26,7 @@ Este repositorio contiene los siguientes archivos clave:
 
 1. **Clona este repositorio:**  
    ```bash
-   git clone https://github.com/ch0rtas/IS-Inteligencia_Artificial.git
+   git clone https://github.com/ch0rtas/SWE-Inteligencia_Artificial.git
    cd Clasificación_Imagenes_Perros_y_Gatos
    ```
 

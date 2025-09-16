@@ -2,7 +2,7 @@
 
 Este repositorio contiene el proyecto **Generación de Texto y Diálogo con Modelos de Redes Neuronales y Transformers**, desarrollado como parte del curso _"Inteligencia Artificial"_ en el grado de Ingeniería de Software. El objetivo principal fue entrenar y evaluar diferentes modelos de redes neuronales (RNN, LSTM, GRU y Transformers) para la generación de texto y simulación de diálogos entre parlamentarios.
 
-[Ir al proyecto en GitHub](https://github.com/ch0rtas/IS-Inteligencia_Artificial/tree/main/Generacion_Texto_Dialogo_Redes_Neuronales_Transformers)
+[Ir al proyecto en GitHub](https://github.com/ch0rtas/SWE-Inteligencia_Artificial/tree/main/Generacion_Texto_Dialogo_Redes_Neuronales_Transformers)
 
 ## Estructura del proyecto
 
@@ -45,7 +45,7 @@ El proyecto tiene como objetivo entrenar y evaluar diferentes modelos de redes n
 
 1. **Clona este repositorio:**  
    ```bash
-   git clone https://github.com/ch0rtas/IS-Inteligencia_Artificial.git
+   git clone https://github.com/ch0rtas/SWE-Inteligencia_Artificial.git
    cd Generacion_Texto_Dialogo_Redes_Neuronales_Transformers
    ```
 

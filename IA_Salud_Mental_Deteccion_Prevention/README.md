@@ -2,7 +2,7 @@
 
 Este repositorio contiene el proyecto **IA en Salud Mental: Detección y Prevención**, desarrollado como parte del curso _"Inteligencia Artificial"_ en el grado de Ingeniería de Software. El objetivo principal fue aplicar técnicas de IA para la detección temprana de trastornos mentales, utilizando modelos de aprendizaje automático para identificar patrones en los datos clínicos y mejorar la prevención.
 
-[Ir al proyecto en GitHub](https://github.com/ch0rtas/IS-Inteligencia_Artificial/tree/main/IA_Salud_Mental_Deteccion_Prevention)
+[Ir al proyecto en GitHub](https://github.com/ch0rtas/SWE-Inteligencia_Artificial/tree/main/IA_Salud_Mental_Deteccion_Prevention)
 
 ## Descripción del Proyecto
 
@@ -50,7 +50,7 @@ En el ámbito práctico, se ha logrado entrenar un modelo de IA con una precisi�
 
 1. **Clona este repositorio:**  
    ```bash
-   git clone https://github.com/ch0rtas/IS-Inteligencia_Artificial.git
+   git clone https://github.com/ch0rtas/SWE-Inteligencia_Artificial.git
    cd IA_Salud_Mental_Deteccion_Prevention
    ```
 
